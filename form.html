@@ -1,0 +1,100 @@
+﻿<html>
+<head>
+    <style type="text/css">
+        body
+        {
+            background-color: darkkhaki;
+        }
+
+        h1
+        {
+            position: absolute;
+            top:125px;
+            font-size: 40px;
+            left: 100px;
+        }
+
+        #formtable
+        {
+            position: absolute;
+            border-spacing: 0 15px;
+            top: 170px;
+            left: 100px;
+        }
+
+        #row1
+        {
+            font-size: 25px;
+            width: 500px;
+        }
+
+        #row2
+        {
+            font-size: 25px;
+            width: 500px;
+        }
+
+        #row3
+        {
+            font-size: 25px;
+            width: 500px;
+        }
+        @media screen and (max-width: 658px)
+        {
+            #formtable{
+            position: absolute;
+            border-spacing: 0 15px;
+            top: 170px;
+            left: 100px;
+        }
+        #row1{
+            font-size: 20px;
+            width: 300px;
+        }
+
+        #row2{
+            font-size: 20px;
+            width: 300px;
+        }
+
+        #row3{
+            font-size: 20px;
+            width: 300px;
+        }
+
+            
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="styleindex2.css" />
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <div class="logo"><h4 >EndGem</h4></div>
+        </nav>
+    </header>    
+    <form action="phptomysql1.php" method="post" enctype="multipart/form-data">
+        <h1>Add Material</h1>
+        <table id="formtable">
+            <tr>
+                <td>
+                    <select name="fname" id="row1" required >
+                        <option selected value="">Select A Course</option>
+                        <option value="NM">Numerical Methods</option>
+                        <option value="ET">Electromagnetic Theory</option>
+                        <option value="MT1">Manufacturing Technology-I</option>
+                        <option value="ETh">Engineering Thermodynamics</option>
+                        <option value="ED">Mechanical Engineering Drawing</option>
+                        <option value="MSci">Material Science</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr><td><input placeholder="Display name" id="row2" name="cname"  required/></td></tr>
+            <tr><td><input type="file" id="row3" name="pdffile" required/></td></tr>
+            <tr><td><input type="submit" style="font-size:20px;" id="row4" /></td></tr>
+        </table>
+    </form>
+</body>
+
+</html>

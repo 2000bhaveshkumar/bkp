@@ -1,0 +1,20 @@
+/*#downloads{
+    width: 600px;
+    height: 50px;
+    position: relative;
+    float: right;;
+    left: 400px;
+    text-align: center;
+    border:5px solid red;
+    background-color: teal;
+}
+#downloadbtn{
+    position: absolute;
+    right: 3px;
+    //width: 5px;
+}
+#pdfname{
+    font-size: 25px;
+    position: absolute;
+    left: 3px;
+}
